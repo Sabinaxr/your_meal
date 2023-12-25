@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+html {
+    --container: 300px;
+    --padding-container: 10px;
+    box-sizing: border-box;
+    /* position: relative;
+    overflow: hidden; */
+
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #F9F9F9;
+        /* position: relative;
+    overflow: hidden; */
+    color: #000;
+}
+
+img, svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p, figure {
+    margin: 0;
+}
+
+iframe {
+    border: 0;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container {
+    max-width: calc(var(--container) + (var(--padding-container)*2));
+    padding: 0, var(--padding-container);
+    margin: 0 auto;
+}
+
+@media (min-width: 480px){
+    html {
+        --container: 640px;
+    }
+
+
+}
+
+@media (min-width: 768px){
+    html {
+        --padding-container: 64px; 
+    }
+}
